@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <h2 class="text-pink">Request an Outing</h2>
+        <form action="/submit_request" method="post" class="mt-4">
+            <!-- Student Name -->
+            <div class="form-group mb-3">
+                <label for="name">Student Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+
+            <!-- Reason for Outing -->
+            <div class="form-group mb-3">
+                <label for="reason">Reason for Outing:</label>
+                <textarea class="form-control" id="reason" name="reason" rows="4" required></textarea>
+            </div>
+
+            <!-- Number of Days Leave -->
+            <div class="form-group mb-3">
+                <label for="days_leave">Number of Days Leave:</label>
+                <input type="number" class="form-control" id="days_leave" name="days_leave" min="1" required>
+            </div>
+
+            <!-- Call with Mother/Father/Guardian -->
+            <div class="form-group mb-3">
+                <label for="guardian_contact">Call with Mother/Father/Guardian:</label>
+                <select class="form-control" id="guardian_contact" name="guardian_contact" required>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary mt-3">Submit Request</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS (optional, for features like modals, etc.) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
